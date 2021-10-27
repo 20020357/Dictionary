@@ -1,0 +1,80 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <artifactId>App5</artifactId>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <release>11</release>
+                </configuration>
+                <groupId>org.apache.maven.plugins</groupId>
+                <version>3.8.0</version>
+            </plugin>
+            <plugin>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <!-- Default configuration for running -->
+                        <!-- Usage: mvn clean javafx:run -->
+                        <configuration>
+                            <mainClass>org.example.App</mainClass>
+                        </configuration>
+                        <id>default-cli</id>
+                    </execution>
+                </executions>
+                <groupId>org.openjfx</groupId>
+                <version>0.0.7</version>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/net.sf.sociaal/freetts -->
+        <dependency>
+            <artifactId>freetts</artifactId>
+            <groupId>net.sf.sociaal</groupId>
+            <version>1.2.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.jfoenix/jfoenix -->
+        <dependency>
+            <artifactId>jfoenix</artifactId>
+            <groupId>com.jfoenix</groupId>
+            <version>9.0.10</version>
+        </dependency>
+        <dependency>
+            <artifactId>controlsfx</artifactId>
+            <groupId>org.controlsfx</groupId>
+            <version>11.1.0</version>
+        </dependency>
+        <dependency>
+            <artifactId>javafx-media</artifactId>
+            <groupId>org.openjfx</groupId>
+            <version>17.0.0.1</version>
+        </dependency>
+        <dependency>
+            <artifactId>javafx-controls</artifactId>
+            <groupId>org.openjfx</groupId>
+            <version>17.0.0.1</version>
+        </dependency>
+        <dependency>
+            <artifactId>javafx-fxml</artifactId>
+            <groupId>org.openjfx</groupId>
+            <version>17.0.0.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
+        <dependency>
+            <artifactId>mariadb-java-client</artifactId>
+            <groupId>org.mariadb.jdbc</groupId>
+            <version>3.0.2-rc</version>
+        </dependency>
+    </dependencies>
+    <groupId>org.example</groupId>
+    <modelVersion>4.0.0</modelVersion>
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <version>1.0-SNAPSHOT</version>
+</project>
